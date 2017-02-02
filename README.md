@@ -3,7 +3,7 @@ This code aims at estimating multiple principal components of a observed matrix 
     **(1) Deflation.** Compute a single principal component given the constraints, substract the resulting rank-1 matrix from the observation and iterate.
     **(2) Regularization.** Formulate the problem as a single optimization problem on the set of principal components and estimate them jointly.
 
-We refer to the [Section 5.2](https://github.com/AdRoll/regalmin/blob/first_commit/techreport) and references therein for a detailed description of the algorithm. Note that we are not running the algorithm on the sample covariance matrix but on the observation matrix that has size `number of observations` x `number of variables`. This problem is sometimes referred to as the Canonical Component Analysis. 
+We refer to the [Section 5.2](https://github.com/AdRoll/regalmin/blob/first_commit/techreport.pdf) and references therein for a detailed description of the algorithm. Note that we are not running the algorithm on the sample covariance matrix but on the observation matrix that has size `number of observations` x `number of variables`. This problem is sometimes referred to as the Canonical Component Analysis. 
 
 
 ## Usage
