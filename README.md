@@ -61,11 +61,11 @@ Note that the objective function being non-convex the gradient norms have no gua
 ### Performance
 An example on gene-expression data from http://ccb.nki.nl/data/. Use ```load_gene_expression_data.py``` to pre-process the data and run ```sparse_pca_comparison_witten_kqtrace.py```.  This computes the regularized sparse PCA for a range of regularization parameters. Higher parameters result in sparser principal components (right factors). Hence we get a set of `(sparsity, distance to observation)` values that we can represent as a plot. Note that when the number of factors computed is larger than 1, evaluating the results using the explained variance is meaningful only if the factors are constrained to be orthogonal.
 
-<img align="center" src="https://github.com/AdRoll/regalmin/reg_vs_deflation_4k_iter.png" width=450/>
+<img align="center" src="https://github.com/AdRoll/regalmin/tree/first_commit/reg_vs_deflation_4k_iter.png" width=450/>
 
 We also compare this algorithm with an Active Set algorithm proposed in http://arxiv.org/abs/1407.5158 and show that it performs better in the sense that for the same rank or the same number of nunzeros the obtained low-rank approximation has a lower reconstruction error. This comes with the caveat that the factors obtained using the Active Set algorithm have the exact desired sparsity, whereas the factors obtained using this algorithm have a larger number of nonzeros usually. This comes from the behavior of the k-support norm's proximal operator.
 
-<img align="center" src="https://github.com/AdRoll/regalmin/alternate_min_active_set_comparison_4.png" width=450/>
+<img align="center" src="https://github.com/AdRoll/regalmin/tree/first_commit/alternate_min_active_set_comparison_4.png" width=450/>
 
 ## Future work / TODO
 
